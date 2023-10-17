@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: $white-normal;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8em;
+
+}
+
+a:hover{
+    color: $orange-light;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.7em;
+}
+
+#header{
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center;
+    height: 100px;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: $dark-2;
+    color: $white-normal;
+
+    span{
+        color: $orange-light;  
+    }
+}
+
+#header > h1:hover{
+    opacity: 0.8;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem; 
+   
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px){
+    
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background-color: $dark-1;
+        visibility: hidden;
+        overflow-y: hidden;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000; 
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid $white-normal ;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer{
+        display: block;
+        border-top: 2px solid $white-normal; /*Barrinha de cima*/
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $white-normal;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        
+        top: -7px;
+    }
+}
+
+/*Para tablets*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    a{
+        font-size: 1.6em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    #header > h1{
+        margin-left: 150px ;
+        font-size: 2em;
+    }
+
+    a:hover{
+        color: $white-normal;
+    }
+
+    #nav{
+        margin-right: 150px ;
+    }
+
+    #nav li{
+        margin-left: 20px ;
+    }
+
+    #nav a{
+        font-size: 1em
+    }
+
+    nav a:hover{
+        opacity: unset;
+    }
+    
+    li{
+        position: relative;
+    }
+
+    li > a::after{
+        content: ' ';
+        width: 0%;
+        height: 4px;
+        background-color: $orange-light;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .4s ease-in-out;
+    }
+
+    nav a:hover::after{
+        width: 100%;
+    }
+}
