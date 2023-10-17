@@ -150,7 +150,6 @@ header h2 {
 #video .video {
   width: 100%;
   max-width: 50%;
-  background-color: red;
 }
 #video .video .container-video {
   width: 100%;
@@ -595,7 +594,7 @@ header h2 {
   padding: 30px;
   max-width: 500px;
 }
-.projects .container-zenith {
+.projects .container-lockeey {
   border: 3px solid #475462;
   border-radius: 15px;
   padding: 30px;
@@ -608,7 +607,7 @@ header h2 {
   max-width: 500px;
 }
 .projects .container-equilibrium,
-.projects .container-zenith,
+.projects .container-lockeey,
 .projects .container-astral {
   flex: 1;
 }
