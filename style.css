@@ -349,7 +349,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
     gap: 12px;
-    width: 80%;
+    width: 70%;
   }
 }
 .services {
