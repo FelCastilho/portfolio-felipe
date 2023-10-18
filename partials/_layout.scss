@@ -87,8 +87,6 @@
 
     .hero-about{
         display: flex;
-        margin-top: 100px;
-        margin-bottom: 100px;
         background-color: $dark-2;
         width: 80%;
         padding: 100px;
@@ -144,7 +142,6 @@
 @media screen and (max-width: 768px){
 
     .about-me{
-
         height: 100vh;
         background-color: $dark-2;
     
@@ -199,7 +196,6 @@
     h1{
         font-family: 'Orbitron', sans-serif;
         text-align: center;
-        padding-top: 50px;
         padding-bottom: 50px;
     }
 

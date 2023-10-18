@@ -243,8 +243,6 @@ h1 {
 }
 .about-me .hero-about {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 100px;
   background-color: #141414;
   width: 80%;
   padding: 100px;
@@ -331,7 +329,6 @@ h1 {
 .mytechs h1 {
   font-family: "Orbitron", sans-serif;
   text-align: center;
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 .mytechs .icons-container {
