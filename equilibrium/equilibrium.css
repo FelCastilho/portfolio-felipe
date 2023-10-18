@@ -405,11 +405,15 @@ header h2 {
   height: 100vh;
   background-color: #fff;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 100%;
+}
+.mytechs .container-tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .mytechs h1 {
   font-family: "Orbitron", sans-serif;
@@ -417,32 +421,22 @@ header h2 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.mytechs .programming-icons-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.mytechs .icons-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  width: 100%;
 }
-.mytechs .programming-icons-container .programming-icons-img {
-  width: 8%;
-  margin-right: 30px;
-}
-.mytechs .design-icons-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mytechs .design-icons-container .design-icons-img {
-  width: 8%;
-  margin-top: 60px;
-  margin-right: 30px;
+.mytechs .icons-container .programming-icons-img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .mytechs .programming-icons-img {
-    min-width: 10%;
-  }
-  .mytechs .design-icons-img {
-    min-width: 10%;
+  .mytechs .icons-container {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 12px;
+    width: 80%;
   }
 }
 .services {
