@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "../partials/colors";
+@import "../lockeey/layout-lockeey";
+@import "../partials/layout";
+@import "../partials/scrollbar";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Sora' , sans-serif;
+    position: relative;
+    background-color: $dark-2;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}

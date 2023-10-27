@@ -1,0 +1,178 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header #logo-header{
+    max-width: 20%;
+    min-width: 20%;
+}
+
+header h2{
+    color: $white-normal;
+}
+
+#apresentacao{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.img-box{
+    max-width: 40%;
+}
+
+.text-box{
+    color: $white-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#tela-inicial{
+    background-color: $dark-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+
+        .img-box{
+            max-width: 50%;
+        }
+    
+        .text-box{
+            width: 50%;
+            height: 0vh;
+        }
+    }
+}
+
+
+#video{
+    background-color: $white-normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .video{
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .video .container-video{
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+       
+    }
+
+    .video .container-video iframe{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    header #logo-header{
+        max-width: 50%;
+        min-width: 20%;
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    header h2{
+        padding-bottom: 50px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    #apresentacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .img-box{
+        max-width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .text-box{
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    #tela-inicial{
+    
+        div{
+            display: flex;
+            flex-direction: column;
+    
+            .img-box{
+                max-width: 80%;
+            }
+        
+            .text-box{
+                width: 90%;
+                height: 100%;
+            }
+        }
+    }
+
+    #video{
+         
+        .video{
+            width: 100%;
+            max-width: 80%;
+        }
+    
+    }
+    
+    
+}
