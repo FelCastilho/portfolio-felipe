@@ -27,37 +27,37 @@ sr.reveal('#html-icon', {
 })
 
 sr.reveal('#css-icon', {
-    duration: 3000,
+    duration: 2500,
     distance: '-20%'
 })
 
 sr.reveal('#js-icon', {
-    duration: 4000,
+    duration: 3000,
     distance: '-20%'
 })
 
 sr.reveal('#sass-icon', {
-    duration: 5000,
+    duration: 3500,
     distance: '-20%'
 })
 
 sr.reveal('#react-icon', {
-    duration: 6000,
+    duration: 4000,
     distance: '-20%'
 })
 
 sr.reveal('#git-icon', {
-    duration: 7000,
+    duration: 4500,
     distance: '-20%'
 })
 
 sr.reveal('#figma-icon', {
-    duration: 8000,
+    duration: 5000,
     distance: '-20%'
 })
 
 sr.reveal('#photoshop-icon', {
-    duration: 9000,
+    duration: 5500,
     distance: '-20%'
 })
 
