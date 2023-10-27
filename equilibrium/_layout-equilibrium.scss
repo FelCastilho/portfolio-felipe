@@ -154,13 +154,14 @@ header h2{
 
     .video{
         width: 100%;
-        max-width: 50%;
+        max-width: 600px;
     }
 
     .video .container-video{
         width: 100%;
         position: relative;
         padding-bottom: 56.25%;
+       
     }
 
     .video .container-video iframe{
@@ -290,6 +291,15 @@ header h2{
         align-items: center;
         align-items: center;
         height: 100vh;
+    }
+
+    #video{
+         
+        .video{
+            width: 100%;
+            max-width: 80%;
+        }
+    
     }
     
     

@@ -149,7 +149,7 @@ header h2 {
 }
 #video .video {
   width: 100%;
-  max-width: 50%;
+  max-width: 600px;
 }
 #video .video .container-video {
   width: 100%;
@@ -255,6 +255,10 @@ header h2 {
     align-items: center;
     height: 100vh;
   }
+  #video .video {
+    width: 100%;
+    max-width: 80%;
+  }
 }
 .container {
   max-width: 1440px;
@@ -354,8 +358,6 @@ header h2 {
 }
 .about-me .hero-about .hero-about-icons a {
   width: 100%;
-}
-.about-me .hero-about .hero-about-icons a {
   transition: 1.2s;
 }
 .about-me .hero-about .hero-about-icons a:hover {
@@ -366,6 +368,9 @@ header h2 {
   padding: 10px;
   font-size: 2rem;
   border-radius: 5px;
+}
+.about-me .hero-about .hero-about-icons #behance-icon, .about-me .hero-about .hero-about-icons #linkedin-icon, .about-me .hero-about .hero-about-icons #instagram-icon, .about-me .hero-about .hero-about-icons #github-icon {
+  visibility: hidden;
 }
 .about-me .hero-about .hero-about-img {
   max-width: 100%;
@@ -426,6 +431,9 @@ header h2 {
 }
 .mytechs .icons-container .programming-icons-img {
   width: 100%;
+}
+.mytechs #html-icon, .mytechs #css-icon, .mytechs #js-icon, .mytechs #sass-icon, .mytechs #react-icon, .mytechs #git-icon, .mytechs #figma-icon, .mytechs #photoshop-icon {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {

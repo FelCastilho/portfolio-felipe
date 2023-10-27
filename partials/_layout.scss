@@ -113,12 +113,9 @@
 
             a{
                 width: 100%;
-            }
-
-            a{
                 transition: 1.2s;
             }
-
+            
             a:hover{
                 transform: rotate(180deg);
             }
@@ -128,6 +125,10 @@
                 padding: 10px;
                 font-size: 2rem;
                 border-radius: 5px;
+            }
+
+            #behance-icon, #linkedin-icon, #instagram-icon, #github-icon{
+                visibility: hidden;
             }
             
         }
@@ -208,6 +209,10 @@
         .programming-icons-img{
             width: 100%;
         }
+    }
+
+    #html-icon, #css-icon, #js-icon, #sass-icon, #react-icon, #git-icon, #figma-icon, #photoshop-icon{
+        visibility: hidden;
     }
 
 }
