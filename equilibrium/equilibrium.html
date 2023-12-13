@@ -1,189 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equilibrium - Mobile App</title>
     <link rel="stylesheet" href="equilibrium.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="../assets/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Equilibrium</title>
 </head>
-
 <body>
 
-    <header id="header">
-        <img src="../assets/Logo - equilibrium.svg" alt="Logo aplicativo Equilibrium" id="logo-header">
+    <header>
 
-        <h2>React-native | CLI</h2>
+        <img src="../assets/Logo - equilibrium.svg" alt="Logo aplicativo Equilibrium" class="logo">
+
+        <h2>React Native | CLI</h2>
+        
     </header>
 
     <main>
 
-        <section id="apresentacao" class="container">
+        <div class="fab-button" id="fab-button">
+            <i class="fa-solid fa-arrow-up" style="color: #141414;"></i>
+        </div>
 
-            <div class="img-box">
+        <div class="apresentation-screen" id="apresentation-screen">
 
-                <img src="images/apresentacao.png" alt="Imagem aprensentação do Equilibrium" class="app-img">
+            <img src="images/apresentacao.png" alt="Telas de aprensentação">
 
-            </div>
-
-            <div class="text-box">
+            <div class="apresentation-text">
 
                 <h1>Telas de apresentação</h1>
+
                 <br>
-                <br>
+
                 <p>
-                Que buscam ser simples e de fácil utilização
-                para o usuário. 
-                
-                <br>
-                <br>
-                Possui telas de apresentação, login e registro.
+                    Que buscam ser simples intuitivas             para o usuário.
                 </p>
-                
+
+                <br>
+
+                <p>O aplicativo conta com uma tela de boas vindas, e telas de registro e login.</p>
             </div>
 
-        </section>
+        </div>
 
-        <section id="tela-inicial" >
+        <div class="home-screen" id="home-screen">
 
-            <div class="container">
+            <div class="home-text">
 
-                <div class="text-box">
+                <h1>Tela inicial</h1>
 
-                    <h1>Tela inicial</h1>
-                    <br>
-                    <br>
-                    <p>
-                        O usuário tem a opção  de adicionar
-                        a quantidade de água que bebeu no dia,
-                        o exercicio que ele fez e quantas horas de
-                        sono ele teve durante a noite
-                    <br>
-                    <br>
-                    Assim é possivel acompanhar e monitorar
-                    sua saúde.
-                    </p>
-                
-                </div>
+                <br>
 
-                <div class="img-box">
-                    <img src="images/tela inicial.png" alt="Imagem aprensentação do Equilibrium" class="app-img">
-                </div>
+                <p>
+                    O usuário tem a opção  de adicionar
+                    a quantidade de água que bebeu no dia,
+                    o exercicio que ele fez e quantas horas de 
+                    sono ele teve durante a noite.
+                </p>
+
+                <br>
+
+                <p>Assim é possivel acompanhar e monitorar sua saúde.</p>
 
             </div>
 
-        </section>
+            <img src="images/tela inicial.png" alt="Tela inicial">
 
-        <section id="objetivos" >
+        </div>
 
-            <div class="container">
+        <div class="objective-screen">
 
-                <div class="img-box">
+            <img src="images/objetivos.png" alt="Tela de objetivos">
 
-                    <img src="images/objetivos.png" alt="Imagem aprensentação do Equilibrium" class="app-img">
+            <div class="objective-text">
 
-                </div>
+                <h1>Tela de objetivos</h1>
 
-                <div class="text-box">
+                <br>
 
-                    <h1>Telas de objetivo</h1>
-                    <br>
-                    <br>
-                    <p>
-                        Conectada diretamente ao Firebase, o usuário 
-                        pode adicionar ou remover metas para o 
-                        seu dia a dia.
-                    <br>
-                    <br>
-                        Assim o usuário pode se desafiar  e organizar
-                        sua rotina.
-                    </p>
-                
-                </div>
+                <p>
+                    Conectada diretamente ao Firebase, o usuário 
+                    pode adicionar ou remover metas para o 
+                    seu dia a dia.
+                </p>
 
+                <br>
+
+                <p>
+                    Assim o usuário pode se desafiar  e organizar
+                    sua rotina.
+                </p>
             </div>
 
-        </section>
+        </div>
 
-        <section id="imc" >
+        <div class="imc-screen">
 
-            <div class="container">
+            <div class="imc-text">
 
-                <div class="text-box">
+                <h1>Tela de IMC</h1>
 
-                    <h1>Telas de IMC</h1>
-                    <br>
-                    <br>
-                    <p>
+                <br>
+
+                <p>
                     Assim o usuário pode calcular o seu índice
                     de massa corporal e verificar se está com o
                     peso normal, ou acima do peso.
-                    </p>
-                
-                </div>
-
-                
-                <div class="img-box">
-
-                    <img src="images/IMC.png" alt="Imagem aprensentação do Equilibrium" class="app-img">
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="perfil" class="container">
-
-            <div class="img-box">
-
-                <img src="images/perfil.png" alt="Imagem aprensentação do Equilibrium" class="app-img">
-
-            </div>
-
-            <div class="text-box">
-
-                <h1>Telas de Perfil</h1>
-                <br>
-                <br>
-                <p>
-                Que buscam ser simples e de fácil utilização
-                para o usuário. 
-                
-                <br>
-                <br>
-                Possui telas de apresentação, login e registro.
                 </p>
-                
-
             </div>
 
-        </section>
+            <img src="images/IMC.png" alt="Tela de objetivos">
+
+        </div>
+
+        <div class="perfil-screen">
+
+            <img src="images/perfil.png" alt="Tela de perfil">
+            
+            <div class="perfil-text">
+
+                <h1>Tela de perfil</h1>
+
+                <br>
+
+                <p>Onde o usuário pode adicionar uma foto de
+                perfil e alterá-la caso queira.</p>
+
+                <br>
+
+                <p>Aqui também é possível verificar os dados
+                cadastrados e deslogar da conta.</p>
+
+            </div>
+        </div>
 
         <section id="video" >
 
-                <h1>Verifique o projeto completo</h1>
+            <h1>Veja o projeto completo</h1>
 
-                <div class="video">
+            <div class="video">
 
-                    <div class="container-video">
+                <div class="container-video">
 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0VsB03-3sRU?si=0GZYYNqFrhEwMHlm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    
-                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0VsB03-3sRU?si=0GZYYNqFrhEwMHlm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </div>
 
-            </div>
+        </div>
 
-        </section>
+    </section>
 
     </main>
 
+    <script src="scripts/scrollTop.js"></script>
 </body>
-
 </html>

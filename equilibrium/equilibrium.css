@@ -6,133 +6,82 @@
 }
 
 /*Importando o arquivo com cores*/
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 8px;
-}
-
-h1 {
-  font-family: "Orbitron", sans-serif;
-  letter-spacing: 2px;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 30vh;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
 }
-
-header #logo-header {
-  max-width: 20%;
-  min-width: 20%;
+header .logo {
+  width: 25%;
 }
-
 header h2 {
+  margin-top: 15px;
   color: #fff;
 }
 
-#apresentacao {
+main img {
+  width: 40%;
+}
+
+.apresentation-screen {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   height: 70vh;
-  display: flex;
-  justify-content: space-around;
-  padding: 5%;
+  color: white;
+}
+.apresentation-screen .apresentation-text {
+  width: 30%;
 }
 
-.img-box {
-  max-width: 40%;
-}
-
-.text-box {
-  color: #fff;
+.home-screen {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-}
-
-#tela-inicial {
+  justify-content: space-around;
+  height: 100vh;
   background-color: #181818;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
+  color: white;
 }
-#tela-inicial div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5%;
-  width: 100%;
-}
-#tela-inicial div .img-box {
-  max-width: 50%;
-}
-#tela-inicial div .text-box {
-  width: 50%;
-  height: 0vh;
+.home-screen .home-text {
+  width: 30%;
 }
 
-#objetivos {
-  background-color: #fff;
+.objective-screen {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   height: 100vh;
-}
-#objetivos div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5%;
-  width: 100%;
-}
-#objetivos div .img-box {
-  max-width: 50%;
-}
-#objetivos div .text-box {
-  width: 50%;
-  height: 0vh;
+  background-color: white;
   color: #181818;
 }
+.objective-screen .objective-text {
+  width: 40%;
+}
 
-#imc {
+.imc-screen {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
   background-color: #181818;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
+  color: #fff;
 }
-#imc div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5%;
-  width: 100%;
-}
-#imc div .img-box {
-  max-width: 50%;
-}
-#imc div .text-box {
-  width: 50%;
-  height: 0vh;
+.imc-screen .imc-text {
+  width: 30%;
 }
 
-#perfil {
-  background-color: #141414;
+.perfil-screen {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   height: 100vh;
-  padding: 5%;
+  background-color: #141414;
+  color: #fff;
+}
+.perfil-screen .perfil-text {
+  width: 35%;
 }
 
 #video {
@@ -162,98 +111,72 @@ header h2 {
   position: absolute;
 }
 
-/*
-.go-top{
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 9999;
-    background-color: $orange-light;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+.fab-button {
+  visibility: hidden;
+  width: 60px;
+  height: 60px;
+  font-size: 1.3em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background-color: #FF7A00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fab-button a {
+  width: 60%;
+}
 
-    a{
-        width: 60%;
-    }
-
-}*/
 @media screen and (max-width: 768px) {
-  header #logo-header {
-    max-width: 50%;
-    min-width: 20%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  header .logo {
+    width: 50%;
   }
-  header h2 {
-    padding-bottom: 50px;
+  main img {
+    width: 70%;
   }
   h1 {
-    font-size: 18px;
+    text-align: center;
+    font-size: 1.5rem;
   }
-  #apresentacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  .apresentation-screen {
+    flex-direction: column-reverse;
   }
-  .img-box {
-    max-width: 80%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .text-box {
+  .apresentation-screen .apresentation-text {
     width: 80%;
-    padding-bottom: 50px;
   }
-  #tela-inicial div {
-    display: flex;
+  .home-screen {
     flex-direction: column;
   }
-  #tela-inicial div .img-box {
-    max-width: 80%;
-  }
-  #tela-inicial div .text-box {
-    width: 90%;
-    height: 100%;
-  }
-  #objetivos div {
-    display: flex;
-    flex-direction: column;
-  }
-  #objetivos div .img-box {
-    max-width: 80%;
-  }
-  #objetivos div .text-box {
+  .home-screen .home-text {
     width: 80%;
-    height: 100%;
   }
-  #imc {
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-  }
-  #imc div {
-    display: flex;
+  .objective-screen {
     flex-direction: column;
   }
-  #imc div .img-box {
-    max-width: 80%;
-  }
-  #imc div .text-box {
+  .objective-screen .objective-text {
     width: 80%;
-    height: 100%;
   }
-  #perfil {
-    display: flex;
+  .objective-screen {
+    flex-direction: column-reverse;
+  }
+  .objective-screen .objective-text {
+    width: 80%;
+  }
+  .imc-screen {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    height: 100vh;
+  }
+  .imc-screen .imc-text {
+    width: 80%;
+  }
+  .perfil-screen {
+    flex-direction: column-reverse;
+  }
+  .perfil-screen .perfil-text {
+    width: 80%;
   }
   #video .video {
     width: 100%;

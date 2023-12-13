@@ -1,142 +1,89 @@
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-
-h1{
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-}
-
-p{
-    font-family: 'Montserrat', sans-serif;
-}
-
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 30vh;
+
+    .logo{
+        width: 25%;
+    }
+
+    h2{
+        margin-top: 15px;
+        color: #fff;
+    }
+
+}
+
+main img{
+    width: 40%;
+}
+
+.apresentation-screen{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
     align-items: center;
-}
-
-header #logo-header{
-    max-width: 20%;
-    min-width: 20%;
-}
-
-header h2{
-    color: $white-normal;
-}
-
-#apresentacao{
-    height: 70vh;
-    display: flex;
     justify-content: space-around;
-    padding: 5%;
-}
+    height: calc(100vh - 30vh);
+    color: white;
 
-.img-box{
-    max-width: 40%;
-}
-
-.text-box{
-    color: $white-normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-
-#tela-inicial{
-    background-color: $dark-1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-
-
-    div{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5%;
-        width: 100%;
-
-        .img-box{
-            max-width: 50%;
-        }
-    
-        .text-box{
-            width: 50%;
-            height: 0vh;
-        }
+    .apresentation-text{
+        width: 30%;
     }
 }
 
-#objetivos{
-    background-color: $white-normal;
+.home-screen{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     height: 100vh;
+    background-color: #181818;
+    color: white;
 
-    div{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5%;
-        width: 100%;
-
-        .img-box{
-            max-width: 50%;
-        }
-    
-        .text-box{
-            width: 50%;
-            height: 0vh;
-            color: $dark-1;
-        }
+    .home-text{
+        width: 30%;
     }
 }
 
-#imc{
-    background-color: $dark-1;
+.objective-screen{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     height: 100vh;
+    background-color: white;
+    color: #181818;
 
-
-    div{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5%;
-        width: 100%;
-        
-
-        .img-box{
-            max-width: 50%;
-        }
-    
-        .text-box{
-            width: 50%;
-            height: 0vh;
-        }
+    .objective-text{
+        width: 40%;
     }
 }
 
-#perfil{
-    background-color: $dark-2;
+.imc-screen{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     height: 100vh;
-    padding: 5%;
+    background-color: #181818;
+    color: #fff;
+
+    .imc-text{
+        width: 30%;
+    }
+}
+
+
+.perfil-screen{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #141414;
+    color: #fff;
+
+    .perfil-text{
+        width: 35%;
+    }
+
 }
 
 #video{
@@ -172,10 +119,11 @@ header h2{
     }
 }
 
-/*
-.go-top{
-    width: 70px;
-    height: 70px;
+.fab-button{
+    visibility: hidden;
+    width: 60px;
+    height: 60px;
+    font-size: 1.3em;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -185,112 +133,77 @@ header h2{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    cursor: pointer;
     
     a{
         width: 60%;
     }
 
-}*/
-
+}
 
 @media screen and (max-width: 768px){
-
-    header #logo-header{
-        max-width: 50%;
-        min-width: 20%;
-
-        margin-top: 40px;
-        margin-bottom: 40px;
+    header{
+        .logo{
+            width: 50%;
+        }
     }
 
-    header h2{
-        padding-bottom: 50px;
+    main img{
+        width: 70%;
     }
 
+    
     h1{
-        font-size: 18px;
+        text-align: center;
+        font-size: 1.5rem;
     }
 
-    #apresentacao{
-        display: flex;
+    .apresentation-screen{
+        flex-direction: column-reverse;  
+
+        .apresentation-text{
+            width: 80%;
+        } 
+    }
+
+    .home-screen{
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .img-box{
-        max-width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .text-box{
-        width: 80%;
-        padding-bottom: 50px;
+
+        .home-text{
+            width: 80%;
+        } 
     }
 
-    #tela-inicial{
-    
-        div{
-            display: flex;
-            flex-direction: column;
-    
-            .img-box{
-                max-width: 80%;
-            }
-        
-            .text-box{
-                width: 90%;
-                height: 100%;
-            }
-        }
-    }
-
-    #objetivos{
-    
-        div{
-            display: flex;
-            flex-direction: column;
-    
-            .img-box{
-                max-width: 80%;
-            }
-        
-            .text-box{
-                width: 80%;
-                height: 100%;
-            }
-        }
-    }
-
-    #imc{
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-    
-    
-        div{
-            display: flex;
-            flex-direction: column;
-    
-            .img-box{
-                max-width: 80%;
-            }
-        
-            .text-box{
-                width: 80%;
-                height: 100%;
-            }
-        }
-    }
-
-    #perfil{
-        display: flex;
+    .objective-screen{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-items: center;
-        height: 100vh;
+
+        .objective-text{
+            width: 80%;
+        }
+    }
+
+    .objective-screen{
+        flex-direction: column-reverse;
+
+        .objective-text{
+            width: 80%;
+        }
+    }
+
+    .imc-screen{
+        flex-direction: column;
+
+        .imc-text{
+            width: 80%;
+        }
+    }
+
+    .perfil-screen{
+        flex-direction: column-reverse;
+
+        .perfil-text{
+            width: 80%;
+        }
     }
 
     #video{
@@ -301,8 +214,5 @@ header h2{
         }
     
     }
-    
-    
+
 }
-
-
