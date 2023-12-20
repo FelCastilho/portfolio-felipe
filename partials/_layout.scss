@@ -25,38 +25,40 @@
 
         h1{
             margin-top: 5px;
-            margin-bottom: 5px;
+            margin-bottom: px;
             font-size: 2.5rem;
             letter-spacing: 1.5px;
         }
 
-        p{
+        p:not(:first-child) {
             font-size: 1rem;
             letter-spacing: 1.5px;
+            margin-bottom: 40px;
         }
 
     }
 
-    button{
+    .btn-hero{
+        background-color: $orange-light;
+        border: 2px solid $orange-light;
+        border-radius: 8px;
         color: $white-normal;
-        margin-top: 14px;
-        padding: 10px;
-        background-color: $orange-dark;
-        border: 1px solid $orange-dark;
-        border-radius: 7px;
-        font-family: 'Orbitron', sans-serif;
-        transition: 0.4s;
-        font-size: 1.2em;
+        padding: 12px;
+        width: 40%;
+        text-align: center;
+        transition: 0.3s;
     }
 
-    i{
-        padding: 10px
+    .btn-hero i {
+        margin-left: 10px;
+    }
+
+    .btn-hero:hover{
+        background-color: transparent;
+        border: 2px solid $orange-light;
+        color: $orange-light;
     }
     
-    button:hover{
-        background-color: $dark-2;
-        color: $orange-dark;
-    }
 
 }
 
@@ -458,6 +460,7 @@
     }
 }
 .contact{
+
     background-color: $white-normal;
     display: flex;
     align-items: center;
@@ -542,22 +545,40 @@
 
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+    color: white;
+    padding: 30px;
+
+    img{
+        max-width: 3%;
+    }
+
+    a{
+        color: $orange-dark;
+    }
+
+    a:hover{
+        color: white;
+    }
+}
+
 @media screen and (max-width: 768px){
     
     .contact img{
         display: none;
     }
-}
 
-footer{
-    color: white;
-    padding: 30px;
-    justify-content: flex-end;
-
-    strong{
-        color: $orange-dark;
+    footer{
+        img{
+            max-width: 10%;
+        }        
     }
 }
+
 
 
 
