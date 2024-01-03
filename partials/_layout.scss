@@ -47,6 +47,7 @@
         width: 40%;
         text-align: center;
         transition: 0.3s;
+        margin-right: 10px;
     }
 
     .btn-hero i {
@@ -54,6 +55,27 @@
     }
 
     .btn-hero:hover{
+        background-color: transparent;
+        border: 2px solid $orange-light;
+        color: $orange-light;
+    }
+
+    .btn-certificados{
+        background-color: transparent;
+        border: 2px solid $white-normal;
+        border-radius: 8px;
+        color: $white-normal;
+        padding: 12px;
+        width: 40%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .btn-certificados i {
+        margin-left: 10px;
+    }
+
+    .btn-certificados:hover{
         background-color: transparent;
         border: 2px solid $orange-light;
         color: $orange-light;
@@ -546,6 +568,7 @@
 }
 
 footer{
+
     display: flex;
     align-items: center;
     justify-self: center;

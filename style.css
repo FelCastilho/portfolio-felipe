@@ -211,11 +211,30 @@ h1 {
   width: 40%;
   text-align: center;
   transition: 0.3s;
+  margin-right: 10px;
 }
 .profile .btn-hero i {
   margin-left: 10px;
 }
 .profile .btn-hero:hover {
+  background-color: transparent;
+  border: 2px solid #FF7A00;
+  color: #FF7A00;
+}
+.profile .btn-certificados {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px;
+  width: 40%;
+  text-align: center;
+  transition: 0.3s;
+}
+.profile .btn-certificados i {
+  margin-left: 10px;
+}
+.profile .btn-certificados:hover {
   background-color: transparent;
   border: 2px solid #FF7A00;
   color: #FF7A00;
