@@ -236,6 +236,15 @@ header h2 {
   .profile .profile-img-desktop {
     display: none;
   }
+  .container-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .container-btn .btn-certificados, .container-btn .btn-hero {
+    width: 100%;
+  }
 }
 .about-me {
   background-color: #181818;
