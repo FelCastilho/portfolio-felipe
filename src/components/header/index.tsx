@@ -18,8 +18,8 @@ export function Header() {
                 </div>
                 <div className={`hamburguer ${menuActive ? 'active' : ''}`} onClick={toggleMenu}></div>
                 <ul className={`menu ${menuActive ? 'active' : ''}`}>
-                    <li><Link to="#">Ínicio</Link></li>
-                    <li><Link to="#">Sobre mim</Link></li>
+                    <li><Link to="https://vercel.com/felipe-coutinhos-projects/portfolio-felipe/4o2D6ozPrAEv46PRAAuhLkUNqguj" target='_blank'>Sobre mim</Link></li>
+                    <li><Link to="#">Serviços</Link></li>
                     <li><Link to="#">Projetos</Link></li>
                     <li><Link to="#">Tecnologias</Link></li>
                 </ul>
