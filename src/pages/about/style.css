@@ -1,0 +1,45 @@
+.about{
+    height: 80vh;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container{
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text{
+    color: #fff;
+}
+
+.about-text h1{
+    font-size: 2rem;
+}
+
+.about-text h3{
+    margin: 25px 0;
+}
+
+.about-text p{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.about-icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon-behance, .icon-linkedin, .icon-github, .icon-instagram {
+    transition: filter 0.2s ease-in-out;
+}
+
+.icon-behance:hover, .icon-linkedin:hover, .icon-github:hover, .icon-instagram:hover {
+    filter: drop-shadow(2px 2px 20px #FF7300);
+}

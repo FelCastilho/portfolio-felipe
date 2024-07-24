@@ -1,0 +1,113 @@
+.projects{
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #0E0E0E;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 1220px;
+}
+
+.card{
+    height: 100%;
+}
+
+.card-background{
+    width: 592px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#banner-alex{
+    background-color: #EBF1FF;
+}
+
+#banner-codelab{
+    background-color: #8946FF;
+}
+
+.card h2{
+    padding: 2rem 0;
+}
+
+.project-techs{
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+#alex-techs{
+    color: #EBF1FF;
+}
+
+#codelab-techs{
+    color: #8946FF;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-text{
+    padding: 1rem 0;
+}
+
+.container-btn{
+    color: #fff;
+}
+
+#alex-btn{
+    background-color: #8946FF;
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+}
+
+#codelab-btn{
+    background-color: #8946FF;
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    margin-top: 2rem 0;
+}
+
+@media screen and (max-width: 768px){
+
+    .projects{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .projects-container {
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-background{
+        background-color: #8946FF;
+        width: 100%;
+    }
+
+    .container-btn {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .projects a{
+        width: 100%;
+    }
+
+}

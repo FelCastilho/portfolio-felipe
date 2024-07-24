@@ -13,6 +13,7 @@ export function Header() {
     return (
         <header>
             <div className="navbar">
+
                 <div className="logo">
                     <img src={Logo} className="logo-header"/>
                 </div>

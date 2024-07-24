@@ -1,0 +1,58 @@
+.services{
+    height: 70vh;
+    background-color: #0B0B0B;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.services-container{
+    width: 1220px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.service-box h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.service-box{
+    background-color: #101010;
+    border: 2px solid #1F1F1F;
+    border-bottom: 2px solid #FF7300;
+    color: #fff;
+    max-width: 450px;
+    height: 200px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+}
+
+.services-tag{
+    width: 15%;
+    flex: 1;
+}
+
+.services-figma{
+    width: 10%;
+    flex: 1;
+}
+
+.services-responsive{
+    width: 10%;
+    flex: 2;
+
+}
+

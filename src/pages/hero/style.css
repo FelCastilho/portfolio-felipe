@@ -99,11 +99,11 @@
 }
 
 .icon-right{
-    animation: right-float 4s ease-in-out infinite;
+    animation: right-float 5s ease-in-out infinite;
 }
 
 .icon-left{
-    animation: left-float 4s ease-in-out infinite;
+    animation: left-float 5s ease-in-out infinite;
 }
 
 @keyframes bar-float{

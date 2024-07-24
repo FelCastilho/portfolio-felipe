@@ -4,15 +4,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-.container{
-  width: 1220px;
-  margin: 0 auto;
-}
-
-.dot{
-  color: #FF7300;
-}
-
 ::-webkit-scrollbar{
   background-color: #171717;
   width: 8px;
