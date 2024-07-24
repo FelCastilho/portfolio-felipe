@@ -19,7 +19,7 @@ export default function Hero() {
 
                     <div className="container-btn-hero">
 
-                        <Link to='https://drive.google.com/file/d/1JSSCyZPYL7D6GV-ZFAVN-fT5ZoXN36ML/view?usp=sharing' className="btn-curriculo" target='_blank'> <FaLink size={20} /> Meu Currículo</Link>
+                        <Link to='https://drive.google.com/file/d/1tFXTwQSEl6sDZ1zea8OgBE1q7mFRUSzQ/view?usp=drive_link' className="btn-curriculo" target='_blank'> <FaLink size={20} /> Meu Currículo</Link>
 
                         <Link to='/certificados' target='_blank' className="btn-certificados">  <PiCertificate size={20} /> Certificados</Link>
 

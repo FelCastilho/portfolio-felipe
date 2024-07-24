@@ -3,6 +3,8 @@ import Hero from "../hero";
 import About from '../about';
 import Services from "../services";
 import Projects from "../projects";
+import { Technology } from "../technology";
+import { Footer } from "../../components/footer";
 
 function Home() {
   return (
@@ -12,6 +14,8 @@ function Home() {
       <About />
       <Services />
       <Projects />
+      <Technology />
+      <Footer /> 
     </>
   );
 }

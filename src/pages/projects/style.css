@@ -39,7 +39,7 @@
 }
 
 .card h2{
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .project-techs{
@@ -55,27 +55,26 @@
     color: #8946FF;
 }
 
-a{
-    text-decoration: none;
-}
-
 .card-text{
     padding: 1rem 0;
 }
 
 .container-btn{
-    color: #fff;
+    font-weight: 500;
 }
 
 #alex-btn{
-    background-color: #8946FF;
+    background-color: #EBF1FF;
     padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    color: #0F1B33;
+    border-radius: 4px;
 }
 
 #codelab-btn{
     background-color: #8946FF;
     padding: 0.625rem 2.5rem 0.625rem 2.5rem;
-    margin-top: 2rem 0;
+    color: #fff;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 768px){
