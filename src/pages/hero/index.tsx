@@ -1,5 +1,4 @@
 import './style.css';
-import symbol from '../../assets/hero-img.svg';
 
 import { Link } from 'react-router-dom';
 
@@ -27,8 +26,10 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="hero-img">
-                    <img src={symbol} alt="Símbolo de Tag HTML" />
+                <div className='hero-logo'>
+                    <span className="icon-left">&lt;</span>
+                    <span className="icon-bar">/</span>
+                    <span className="icon-right">&gt;</span>
                 </div>
 
             </div>
