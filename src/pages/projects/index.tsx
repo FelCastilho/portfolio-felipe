@@ -21,13 +21,13 @@ export default function Projects(){
 
                     <div className='card-text'>
                         <h2>Portfólio Alex Oliveira</h2>
-                        <p>Site desenvolvido para o designer Alexandre Oliveira, buscando ressaltar os traços de design e seguindo com fidelidade a identidade visual. </p>
 
                         <p className='project-techs' id='alex-techs'>Vite | React | Typescript | GIT | Figma</p>
                     </div>
 
                     <div className="container-btn">
                         <Link to="#" target='_blank' id='alex-btn'>Acessar projeto</Link>
+                        <Link to="#" target='_blank' className='repositorio-btn'>Acessar repositório</Link>
                     </div>
                     
                 </div>
@@ -40,14 +40,13 @@ export default function Projects(){
                     <div className='card-text'>
 
                         <h2>Desafios Codelab</h2>
-
-                        <p>A CodeLab é uma comunidade para desafios de desenvolvimento frontend, onde os usuários podem treinar os seus conhecimentos em programação. </p>
                         
                         <p className='project-techs' id='codelab-techs'>Vite | React | Typescript | GIT | Figma</p>
                     </div>
 
                     <div className="container-btn">
                         <Link to="#" id='codelab-btn'>Acessar projeto</Link>
+                        <Link to="#" target='_blank' className='repositorio-btn'>Acessar repositório</Link>
                     </div>
                 </div>
 

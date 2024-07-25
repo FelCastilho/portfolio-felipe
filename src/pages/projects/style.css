@@ -11,9 +11,11 @@
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*Criando quebra de linha*/
+    flex-wrap: wrap;
     width: 1220px;
 }
 
@@ -22,12 +24,11 @@
 }
 
 .card-background{
-    width: 592px;
+    width: 500px;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px 8px 0px 0px;
 }
 
 #banner-alex{
@@ -59,7 +60,13 @@
     padding: 1rem 0;
 }
 
-.container-btn{
+.container-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-btn a{
     font-weight: 500;
 }
 
@@ -68,6 +75,15 @@
     padding: 0.625rem 2.5rem 0.625rem 2.5rem;
     color: #0F1B33;
     border-radius: 4px;
+    border: 2px solid #EBF1FF;
+    transition: .3s ease-in-out all;
+}
+
+#alex-btn:hover{
+    background-color: transparent;
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    color: #EBF1FF;
+    border: 2px solid #EBF1FF;
 }
 
 #codelab-btn{
@@ -75,6 +91,30 @@
     padding: 0.625rem 2.5rem 0.625rem 2.5rem;
     color: #fff;
     border-radius: 4px;
+    border: 2px solid #8946FF;
+    transition: .3s ease-in-out all;
+}
+
+#codelab-btn:hover{
+    background-color: transparent;
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    color: #8946FF;
+}
+
+.repositorio-btn{
+    border: 2px solid #FF7300;
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    color: #FF7300;
+    transition: .3s ease-in-out all;
+    border-radius: 4px;
+}
+
+.repositorio-btn:hover{
+    background-color: #FF7300;
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    color: #0F1B33;
+    border-radius: 4px;
+    color: #fff;
 }
 
 @media screen and (max-width: 768px){
