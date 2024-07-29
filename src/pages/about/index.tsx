@@ -16,6 +16,7 @@ export default function About() {
 
                     <h1>Sobre mim</h1>
                     <h3>São Gonçalo, Rio de Janeiro</h3>
+                    
                     <p>Me chamo Felipe Coutinho e tenho 22 anos, sou formado <br />
                         em Sistemas de informação. Atualmente sou freelancer como <br />
                         desenvolvedor web e UI designer. Busco criar projetos com <br />

@@ -56,3 +56,26 @@
 
 }
 
+@media screen and (max-width: 768px){
+    .services{
+        height: 100%; 
+        padding: 50px 0; 
+    }
+
+    .services-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .service-box{
+        margin: 0 auto;
+        width: 85%;
+        height: 100%;
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        user-select: none;
+    }
+}

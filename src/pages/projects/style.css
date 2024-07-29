@@ -120,8 +120,10 @@
 @media screen and (max-width: 768px){
 
     .projects{
+        height: 100%;
         width: 100%;
         margin: 0 auto;
+        background-color: red;
     }
 
     .projects-container {
