@@ -143,19 +143,48 @@
 }
 
 @media screen and (max-width: 768px){
-    .hero-logo{
-        display: none;
+    
+    .hero{
+        width: 100%;
+        height: calc(100vh - 15vh);
+        display: flex;
+        align-items: center;
+        color: #fff;
     }
-
+    
     .hero-container{
         padding: 20px;
         width: 100%;
         margin: 0 auto;
     }
 
+    .hero-text{
+        width: 100%;
+    }
+    
+    .container-btn-hero{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-btn-hero a{
+        justify-content: center;
+        gap: 10px;
+    }
+    
     .hero h1{
         margin-top: 5px;
         margin-bottom: 5px;
         font-size: 2.5rem;
+    }
+    
+    .hero p:not(:first-child) {
+        font-size: .8rem;
+    }
+
+    .hero-logo{
+        display: none;
     }
 }
