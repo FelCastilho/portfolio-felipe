@@ -1,4 +1,4 @@
-.hero{
+.hero {
     background-color: #0B0B0B;
     height: calc(100vh - 15vh);
     display: flex;
@@ -6,7 +6,7 @@
     color: #fff;
 }
 
-.hero-container{
+.hero-container {
     width: 1220px;
     margin: 0 auto;
     display: flex;
@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 
-.hero h1{
+.hero h1 {
     margin-top: 5px;
     font-size: 3.4rem;
     color: #FF7300;
@@ -27,63 +27,75 @@
     color: #A9A9A9;
 }
 
-.small-hero{
+.small-hero {
     font-size: 1.3rem;
 }
 
-.container-btn-hero{
+.btn-shine {
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-size: 200%;
+    background-position: 0%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.container-btn-hero {
     display: flex;
     gap: 20px;
 }
 
-.container-btn-hero a{
+.container-btn-hero a {
     gap: 5px;
     text-decoration: none;
 }
 
-.btn-curriculo{
+.btn-curriculo {
     border: 2px solid #FF7300;
     background-color: #FF7300;
     color: #ffff;
     padding: 14px;
-    border-radius: 5px;     
+    border-radius: 5px;
     font-weight: 600;
     transition: 0.2s ease-in-out all;
     display: flex;
     align-items: center;
 }
 
-.btn-curriculo:hover{
+.btn-curriculo:hover {
     background-color: transparent;
     border: 2px solid #FF7300;
     color: #FF7300;
-    padding: 14px;    
+    padding: 14px;
 }
 
-.btn-certificados{
+.btn-certificados {
     border: 2px solid #fff;
     color: #fff;
     padding: 14px;
     border-radius: 5px;
-    font-weight: 600;     
+    font-weight: 600;
     transition: 0.2s ease-in-out all;
     display: flex;
-    align-items: center;  
+    align-items: center;
 }
 
-.btn-certificados:hover{
+.btn-certificados:hover {
     background-color: #fff;
     border: 2px solid #fff;
     color: #171717;
     padding: 14px;
 }
 
-.hero-logo span{
+.hero-logo span {
     font-size: 10rem;
     font-weight: bold;
 }
 
-.hero-logo{
+.hero-logo {
     height: 100%;
     display: flex;
     align-items: center;
@@ -92,99 +104,150 @@
     user-select: none;
 }
 
-.icon-bar{
+.icon-bar {
     color: #FF7300;
     filter: drop-shadow(2px 2px 60px #FF7300);
     animation: bar-float 6s ease-in-out infinite;
 }
 
-.icon-right{
+.icon-right {
     animation: right-float 5s ease-in-out infinite;
 }
 
-.icon-left{
+.icon-left {
     animation: left-float 5s ease-in-out infinite;
 }
 
-@keyframes bar-float{
+@keyframes bar-float {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
-@keyframes right-float{
+@keyframes right-float {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     50% {
-      transform: translateX(-20px);
+        transform: translateX(-20px);
     }
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
 }
 
-@keyframes left-float{
+@keyframes left-float {
     0% {
-      transform: translateX(0px);
+        transform: translateX(0px);
     }
+
     50% {
-      transform: translateX(10px);
+        transform: translateX(10px);
     }
+
     100% {
-      transform: translateX(0px);
+        transform: translateX(0px);
     }
 }
 
-@media screen and (max-width: 768px){
-    
-    .hero{
+@-moz-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -200%; 
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -200%; 
+    }
+}
+
+@-o-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -200%; 
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: -100%;
+    }
+
+    100% {
+        background-position: -200%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .hero {
         width: 100%;
         height: calc(100vh - 15vh);
         display: flex;
         align-items: center;
         color: #fff;
     }
-    
-    .hero-container{
+
+    .hero-container {
         padding: 20px;
         width: 100%;
         margin: 0 auto;
     }
 
-    .hero-text{
+    .hero-text {
         width: 100%;
     }
-    
-    .container-btn-hero{
+
+    .container-btn-hero {
         display: flex;
         width: 100%;
         flex-direction: column;
         gap: 20px;
     }
 
-    .container-btn-hero a{
+    .container-btn-hero a {
         justify-content: center;
         gap: 10px;
     }
-    
-    .hero h1{
+
+    .hero h1 {
         margin-top: 5px;
         margin-bottom: 5px;
         font-size: 2.5rem;
     }
-    
+
     .hero p:not(:first-child) {
         font-size: .8rem;
     }
 
-    .hero-logo{
+    .hero-logo {
         display: none;
     }
 }

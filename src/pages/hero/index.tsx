@@ -15,7 +15,7 @@ export default function Hero() {
 
                     <p className='small-hero'>Olá, eu sou</p>
                     <h1>Felipe Castilho</h1>
-                    <p>Desenvolvedor Front end & UI designer</p>
+                    <p className='btn-shine'>Desenvolvedor Front end & UI designer</p>
 
                     <div className="container-btn-hero">
 

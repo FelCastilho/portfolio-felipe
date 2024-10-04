@@ -2,7 +2,7 @@ import './style.css'
 
 import { FaReact, FaSass, FaFigma } from "react-icons/fa";
 import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript } from "react-icons/tb";
-import { LiaGitAlt } from "react-icons/lia";
+import { LiaElementor, LiaWordpressSimple   } from "react-icons/lia";
 
 export function Technology() {
 
@@ -34,7 +34,10 @@ export function Technology() {
                         <FaFigma
                             className='techs-icon'
                         />
-                        <LiaGitAlt
+                        <LiaWordpressSimple  
+                            className='techs-icon'
+                        />
+                        <LiaElementor
                             className='techs-icon'
                         />
                     </div>
